@@ -1,0 +1,157 @@
+<h1>Books</h1>
+<table id="table">
+  <thead>
+    <th>Name</th>
+    <th>Rating</th>
+    <th>Votes</th>
+    <th>Status id</th>
+    <th>Status name</th>
+    <th>Available actions</th>
+  </thead>
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= name(book) %></td>
+        <td><%= book.rating %></td>
+        <td><%= book.votes %></td>
+        <td><%= book_status_id(book) %></td>
+        <td><%= book_status_name(book) %></td>
+        <td><%= available_actions(book) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Test 1234 - remove after!!! -->
+<ul style="display: none">
+  <% Book.last(4000).each do |book| %>
+    <%= render partial: 'book', locals: { book: book } %>
+  <% end %>
+</ul>
