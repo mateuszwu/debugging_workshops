@@ -1,0 +1,21 @@
+<h1>Top 10 books rankings</h1>
+
+<% Category.pluck(:name).each do |category| %>
+  <h2><%= category %></h2>
+  <table id="<%= category %>">
+    <thead>
+      <th>Name</th>
+      <th>Rating</th>
+      <th>Votes</th>
+    </thead>
+    <tbody>
+      <% @books[category].each do |book| %>
+        <tr>
+          <td><%= book[:book_name] %></td>
+          <td><%= book[:book_rating] %></td>
+          <td><%= book[:book_votes] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
