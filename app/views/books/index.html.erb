@@ -1,0 +1,17 @@
+<h1>Books</h1>
+<table id="table">
+  <thead>
+    <th>Name</th>
+    <th>Rating</th>
+    <th>Votes</th>
+  </thead>
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.name %></td>
+        <td><%= book.rating %></td>
+        <td><%= book.votes %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
