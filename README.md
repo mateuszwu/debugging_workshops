@@ -1,24 +1,33 @@
-# README
+# Setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+asdf local ruby 3.0.1
+asdf local nodejs 14.15.0
+npm install --global yarn
 
-Things you may want to cover:
+yarn install
+bundle install
+```
 
-* Ruby version
+If you are one of that rich kids with a new fancy MacBook Pro M1 and have a problem with installing nodeJS, please try to type 
+```
+arch -x86_64 zsh
+asdf local ruby 3.0.1
+asdf local nodejs 14.15.0
+npm install --global yarn
 
-* System dependencies
+yarn install
+bundle install
+```
 
-* Configuration
+# Starting app
 
-* Database creation
+```
+rails server
+```
+if everything went ok you should be able to navigate to
+```
+localhost:3000
+```
+and see RoR default welcome page
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
