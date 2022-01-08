@@ -1,24 +1,11 @@
-# README
+# Problem statement
+When I navigate to
+```
+localhost:3000
+```
+I can see the `Books` table with rows populated partially correct. The only problem is the column `Status Name` which for unknown reason it displays 'NOT PROVIDED' instead of valid status name.
+![image](https://user-images.githubusercontent.com/18404037/148653039-f09d5543-1068-438d-8238-46117da8cecd.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Objective
+Fix the `Status Name` column to display a valid status name.
+![image](https://user-images.githubusercontent.com/18404037/148656501-5a1b9295-1f6b-4a4f-9325-e0cc55c322a1.png)
